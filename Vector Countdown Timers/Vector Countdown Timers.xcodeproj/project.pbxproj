@@ -15,6 +15,10 @@
 		BEFFA204267DA35000123D78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA1E0267DA34C00123D78 /* ContentView.swift */; };
 		BEFFA205267DA35000123D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFFA1E1267DA34F00123D78 /* Assets.xcassets */; };
 		BEFFA206267DA35000123D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFFA1E1267DA34F00123D78 /* Assets.xcassets */; };
+		BEFFA218267DA53F00123D78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA216267DA50E00123D78 /* Event.swift */; };
+		BEFFA21A267DA59800123D78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA216267DA50E00123D78 /* Event.swift */; };
+		BEFFA21D267DA6F300123D78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA216267DA50E00123D78 /* Event.swift */; };
+		BEFFA21E267DA6F500123D78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA216267DA50E00123D78 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,13 @@
 			remoteGlobalIDString = BEFFA1EB267DA35000123D78;
 			remoteInfo = "Vector Countdown Timers (macOS)";
 		};
+		BEFFA21B267DA6A800123D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFFA1DA267DA34C00123D78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFFA1E5267DA35000123D78;
+			remoteInfo = "Vector Countdown Timers (iOS)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +55,7 @@
 		BEFFA1F5267DA35000123D78 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		BEFFA1FB267DA35000123D78 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFFA1FF267DA35000123D78 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		BEFFA216267DA50E00123D78 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +103,7 @@
 		BEFFA1DE267DA34C00123D78 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BEFFA215267DA4FA00123D78 /* Common */,
 				BEFFA1DF267DA34C00123D78 /* Vector_Countdown_TimersApp.swift */,
 				BEFFA1E0267DA34C00123D78 /* ContentView.swift */,
 				BEFFA1E1267DA34F00123D78 /* Assets.xcassets */,
@@ -123,6 +136,14 @@
 				BEFFA1FF267DA35000123D78 /* Tests_macOS.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		BEFFA215267DA4FA00123D78 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BEFFA216267DA50E00123D78 /* Event.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +213,7 @@
 			);
 			dependencies = (
 				BEFFA1FD267DA35000123D78 /* PBXTargetDependency */,
+				BEFFA21C267DA6A800123D78 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -284,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFFA203267DA35000123D78 /* ContentView.swift in Sources */,
+				BEFFA21A267DA59800123D78 /* Event.swift in Sources */,
 				BEFFA201267DA35000123D78 /* Vector_Countdown_TimersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFFA204267DA35000123D78 /* ContentView.swift in Sources */,
+				BEFFA218267DA53F00123D78 /* Event.swift in Sources */,
 				BEFFA202267DA35000123D78 /* Vector_Countdown_TimersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFFA21E267DA6F500123D78 /* Event.swift in Sources */,
 				BEFFA1F6267DA35000123D78 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFFA21D267DA6F300123D78 /* Event.swift in Sources */,
 				BEFFA200267DA35000123D78 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +351,11 @@
 			isa = PBXTargetDependency;
 			target = BEFFA1EB267DA35000123D78 /* Vector Countdown Timers (macOS) */;
 			targetProxy = BEFFA1FC267DA35000123D78 /* PBXContainerItemProxy */;
+		};
+		BEFFA21C267DA6A800123D78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFFA1E5267DA35000123D78 /* Vector Countdown Timers (iOS) */;
+			targetProxy = BEFFA21B267DA6A800123D78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +411,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,6 +466,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;

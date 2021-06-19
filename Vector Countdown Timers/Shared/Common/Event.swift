@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Event {
+    let title: String
+    let date: Date
+}
